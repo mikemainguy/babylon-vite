@@ -23,10 +23,13 @@ export class BasicEnvironment {
         this.avatar = new UniversalAvatar(scene, new Vector3(0, 1, -5));
         const physics: EnvironmentPhysics = new EnvironmentPhysics(scene);
         physics.physicsObservable.add((event) => {
+            console.log(event);
             this.avatar.enablePhysics();
 
+
         });
-        this.controllerObservable.add(this.avatar.controllerObserver);
+        physics.initializeAsync();
+        this.controllerObservable.add(this.avatar.controllerObserver, -1, false, this.avatar);
         this.buildXrExperience();
     }
 
