@@ -12,6 +12,8 @@
     "@babylonjs/core": "^6.35.0",
     "@babylonjs/inspector": "^6.35.0",
     "@babylonjs/loaders": "^6.35.0",
+    "@babylonjs/materials": "^6.35.0",
+    "@babylonjs/procedural-textures": "^6.35.0",
     "@babylonjs/havok": "^1.3.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
